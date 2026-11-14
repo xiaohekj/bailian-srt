@@ -1,0 +1,22 @@
+{
+  "_note": "示例配置，可安全提交到仓库。使用时复制为 config.json 并填入自己的值；config.json 已被 .gitignore 排除。更安全：直接设置环境变量 BAILIAN_API_KEY，它会覆盖文件中的 api_key，密钥完全不落盘。",
+  "api_key": "",
+  "base_url": "https://<你的WorkspaceId>.cn-beijing.maas.aliyuncs.com/api/v1",
+  "model": "qwen-audio-3.1-asr-flash",
+  "split_threshold": 300,
+  "segment": 240,
+  "smart_split": true,
+  "silence_window": 15,
+  "silence_noise_db": -35,
+  "silence_min_duration": 0.35,
+  "max_segment_seconds": 290,
+  "max_workers": 4,
+  "language_hints": ["zh"],
+  "oss": {
+    "_note": "仅当显式改用 paraformer-v2 / fun-asr 时才需要（它们只接受公网 URL）。默认方案完全不用填。",
+    "endpoint": "",
+    "bucket": "",
+    "access_key_id": "",
+    "access_key_secret": ""
+  }
+}

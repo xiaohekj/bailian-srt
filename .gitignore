@@ -1,0 +1,35 @@
+# 绝不能提交：含明文 API Key 与 MaaS 工作空间 ID
+config.json
+
+# 个人/一次性修正配置可能含私有内容
+fixes.json
+*fixes*.json
+!references/fixes_example.json
+
+# 运行产物与素材（可能很大、含隐私）
+*.srt
+*.raw.srt
+*.mp4
+*.mkv
+*.mov
+*.mp3
+*.wav
+*frames/
+*_frames/
+*.jpg
+*.png
+*._bailian_tmp/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+{
+  "_comment": "每个视频的一次性修正配置。高频同音错字/专有名词请写进 references/glossary.json（polish.py 自动加载并优先应用），不要在这里重复。",
+  "_priority": "glossary.json > 本文件的 replacements（同名键以词库为准）。本文件适合放：仅本片出现的一次性错字、以及切点边界的 merges。",
+  "_visual_review": "HY 读 --review 截图核对专有名词后，把「字幕写法 -> 画面正确写法」写入 replacements；画面未出现该词时跳过，不要凭猜测改写。新增的高频词建议同时加进词库。",
+  "_semantic_note": "语义错别字（如 加宽→家宽）参考稿可能同样全错，必须靠上下文判断，不能盲目照抄参考稿。此类高频词已收录进 glossary.json。",
+  "replacements": {
+    "一次性错字": "正确写法"
+  },
+  "merges": [
+    {
+      "ids": [28, 29],
+      "text": "示例：切点附近被拆开的句子，合并为语义完整的一句。ids 为原始 .srt 中的连续编号。"
+    }
+  ]
+}
